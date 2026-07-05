@@ -1,125 +1,75 @@
-# 🍔 SmartBite AI – AI-Powered Food Ordering Web Application
+# 🍔 SmartBite AI
 
-SmartBite AI is a modern food ordering web application developed as part of an AI Workshop challenge. The project combines a clean and responsive user interface with AI-powered food recommendations to enhance the user experience. Inspired by platforms like Swiggy and Zomato, it demonstrates how AI can be integrated into a food delivery application.
+SmartBite AI is a modern AI-powered food ordering web application that enhances the food ordering experience with intelligent meal recommendations, an interactive AI assistant, calorie insights, and a clean responsive interface.
 
-> **Note:** This is a frontend prototype created for demonstration purposes. No backend or database is integrated.
+## ✨ Features
 
----
-
-## 📌 Project Overview
-
-The application allows users to browse restaurants, explore offers, interact with an AI assistant, and access additional utility pages such as a calorie dashboard and Excel report—all through a modern and responsive interface.
-
----
-
-# ✨ Features
-
-### 🤖 AI Chat Assistant
-- Interactive chatbot for food recommendations
-- Suggests meals based on user queries
-- Recommends side dishes and desserts
-- Simple conversational interface
-
-### 🍽 Restaurant Listing
-- Browse available restaurants
-- Restaurant cards with details
-- Responsive layout
-
-### 🎯 Advanced Recommendations
-- Personalized food recommendation interface
-- Suggests popular meals and combos
-- Designed according to the workshop challenge requirements
-
-### 🎁 Offers Section
-- Browse available food offers
-- Integrated navigation and UI
-
-### 📊 Monthly Calorie Dashboard
-- Dedicated dashboard page
-- Displays calorie-related information
-- Clean dashboard interface
-
-### 📄 Excel Calorie Report
-- Separate report page
-- UI for calorie report generation
-
-### 🌙 Dark & ☀️ Light Mode
-- Theme toggle available
-- Smooth switching between dark and light modes
-- Consistent design across all pages
-
-### 📱 Responsive Design
-- Desktop friendly
-- Tablet compatible
-- Mobile responsive
+- 🤖 AI Chat Assistant for food recommendations
+- 🍽️ Restaurant browsing interface
+- 🎯 Advanced meal recommendations
+- 🎁 Offers section
+- 📊 Monthly Calorie Dashboard
+- 📄 Excel Calorie Report
+- 🌙 Dark & ☀️ Light Mode
+- 📱 Fully Responsive Design
+- ⚡ Fast and modern UI
+- 🎨 Clean and intuitive user experience
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
-| Category | Technologies |
-|----------|--------------|
-| Framework | Next.js 15 (App Router) |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| UI Components | shadcn/ui |
-| Icons | Lucide React |
-| Theme | next-themes |
-| Package Manager | npm / pnpm |
-| Version Control | Git & GitHub |
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Icons:** Lucide React
+- **Theme:** next-themes
+- **Package Manager:** npm / pnpm
+- **Version Control:** Git & GitHub
 
 ---
 
-# 🏗 Project Architecture
+## 🏗 Architecture
 
 ```
-                     User
-                       │
-                       ▼
-          SmartBite AI Frontend (Next.js)
-                       │
-      ┌───────────────┼────────────────┐
-      │               │                │
-      ▼               ▼                ▼
- Restaurants      AI Assistant      Utility Pages
-  & Offers      Recommendations   (Calories, Report)
-      │               │                │
-      └───────────────┼────────────────┘
-                      ▼
-             Responsive User Interface
+                 User
+                   │
+                   ▼
+          SmartBite AI (Next.js)
+                   │
+      ┌────────────┼────────────┐
+      │            │            │
+      ▼            ▼            ▼
+ Restaurants   AI Assistant   Dashboard
+   & Offers   Recommendations  & Reports
+                   │
+                   ▼
+        Responsive User Interface
 ```
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
-smart-bite-ai-food-app
+smart-bite-ai-food-app/
 │
 ├── app/
-│   ├── restaurants/
-│   ├── offers/
-│   ├── ai-assistant/
-│   ├── calorie-dashboard/
-│   ├── excel-report/
-│   └── ...
-│
 ├── components/
 ├── context/
 ├── lib/
 ├── public/
-│
 ├── package.json
 ├── next.config.mjs
-├── tsconfig.json
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## 1. Clone Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/Palak-999/smart-bite-ai-food-app.git
@@ -129,9 +79,7 @@ git clone https://github.com/Palak-999/smart-bite-ai-food-app.git
 cd smart-bite-ai-food-app
 ```
 
----
-
-## 2. Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
@@ -143,9 +91,7 @@ or
 pnpm install
 ```
 
----
-
-## 3. Run Development Server
+### Start Development Server
 
 ```bash
 npm run dev
@@ -157,7 +103,7 @@ or
 pnpm dev
 ```
 
-Open:
+Visit:
 
 ```
 http://localhost:3000
@@ -165,84 +111,37 @@ http://localhost:3000
 
 ---
 
-# 📸 Screenshots
+## 📸 Preview
 
-## Home Interface
-*(Add homepage screenshot here)*
+### Home Page
+> Add screenshot here
 
----
+### AI Assistant
+> Add screenshot here
 
-## AI Assistant
-
-- Interactive chat experience
-- Food recommendation responses
-- Meal suggestions
+### Calorie Dashboard
+> Add screenshot here
 
 ---
 
-## Dark & Light Theme
+## 🌟 Highlights
 
-Supports both dark and light modes for improved user experience.
-
----
-
-# 🎯 Workshop Challenge Features
-
-The following challenge requirements were implemented:
-
-- ✅ AI Chat Assistant
-- ✅ Advanced Recommendations
-- ✅ Monthly Calorie Dashboard
-- ✅ Excel Calorie Report
-
-### Additional Integrated Features
-
-- ✅ Restaurants Page
-- ✅ Offers Page
-- ✅ Responsive Navigation
-- ✅ Dark / Light Theme
-- ✅ Responsive Design
-- ✅ Modern UI using Tailwind CSS
-- ✅ Interactive User Experience
+- AI-powered food recommendation experience
+- Interactive chatbot interface
+- Integrated Restaurants, Offers, Dashboard and Report pages
+- Responsive design for desktop and mobile
+- Dark and Light theme support
+- Modern component-based architecture
+- Clean and scalable code structure
 
 ---
 
-# 🚧 Current Limitations
-
-- No backend integration
-- No authentication
-- No payment gateway
-- No real restaurant API
-- No database connectivity
-- AI responses are frontend demonstration-based
-
----
-
-# 🔮 Future Enhancements
-
-- Firebase Authentication
-- User Profiles
-- Real Food Ordering
-- Payment Integration
-- Order Tracking
-- Backend APIs
-- Database Integration
-- Personalized AI Recommendations using user history
-
----
-
-# 👩‍💻 Author
+## 👩‍💻 Author
 
 **Palak Choudhary**
 
-GitHub: https://github.com/Palak-999
+GitHub: **https://github.com/Palak-999**
 
 ---
 
-# 📄 License
-
-This project is developed for educational purposes as part of an AI Workshop Challenge.
-
----
-
-## ⭐ If you like this project, consider giving it a Star!
+⭐ If you found this project interesting, consider giving it a star!
