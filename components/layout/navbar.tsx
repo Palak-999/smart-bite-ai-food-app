@@ -60,14 +60,8 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6 lg:px-8">
         {/* Mobile menu */}
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger>
-            <button
-              type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted md:hidden"
-              aria-label="Open menu"
-            >
-              <Menu className="size-5" />
-            </button>
+          <SheetTrigger className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted md:hidden" aria-label="Open menu">
+            <Menu className="size-5" />
           </SheetTrigger>
           <SheetContent side="left" className="w-80 p-0">
             <SheetHeader className="border-b border-border p-4">

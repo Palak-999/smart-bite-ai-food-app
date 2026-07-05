@@ -60,15 +60,9 @@ function SheetContent({
       >
         {children}
         {showCloseButton && (
-          <SheetPrimitive.Close>
-            <button
-              type="button"
-              className="absolute top-3 right-3 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted"
-              aria-label="Close"
-            >
-              <XIcon className="size-4" />
-              <span className="sr-only">Close</span>
-            </button>
+          <SheetPrimitive.Close className="absolute top-3 right-3 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted" aria-label="Close">
+            <XIcon className="size-4" />
+            <span className="sr-only">Close</span>
           </SheetPrimitive.Close>
         )}
       </SheetPrimitive.Popup>
