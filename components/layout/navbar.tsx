@@ -60,7 +60,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6 lg:px-8">
         {/* Mobile menu */}
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild>
+          <SheetTrigger>
             <button
               type="button"
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted md:hidden"
@@ -71,7 +71,7 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="left" className="w-80 p-0">
             <SheetHeader className="border-b border-border p-4">
-              <SheetTitle asChild>
+              <SheetTitle>
                 <Logo />
               </SheetTitle>
             </SheetHeader>
@@ -80,7 +80,7 @@ export function Navbar() {
                 const Icon = link.icon
                 const active = pathname === link.href
                 return (
-                  <SheetClose asChild key={link.href}>
+                  <SheetClose key={link.href}>
                     <Link
                       href={link.href}
                       className={cn(
@@ -96,7 +96,7 @@ export function Navbar() {
                   </SheetClose>
                 )
               })}
-              <SheetClose asChild>
+              <SheetClose>
                 <Link
                   href="/cart"
                   className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
@@ -150,11 +150,11 @@ export function Navbar() {
             return (
               <Button
                 key={link.href}
-                asChild
                 variant="ghost"
                 className={cn('rounded-full', active && 'text-primary')}
+                onClick={() => router.push(link.href)}
               >
-                <Link href={link.href}>{link.label}</Link>
+                {link.label}
               </Button>
             )
           })}
